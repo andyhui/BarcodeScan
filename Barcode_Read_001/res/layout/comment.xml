@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- android:id="@+id/widget_layout_red" -->
+
+    <AnalogClock
+        android:id="@+id/widget36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+    </AnalogClock>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:textColor="@android:color/black"
+        android:textSize="20dip"
+        android:text="我喜欢这个软件" >
+    </TextView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="40dip"
+        android:textSize="20dip"
+        android:text="这个软件一般般" >
+    </TextView>
+
+</LinearLayout>

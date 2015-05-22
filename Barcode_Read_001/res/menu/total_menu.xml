@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Add"/>
+    <item
+        android:id="@+id/menu_wallaper"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Wallpaper"/>
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="Search"/>
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Settings"/>
+
+</menu>

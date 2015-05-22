@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 这是顺序执行的，如果状态是selected，则为android_focused图标，如果不是下一步，采用android_normal图标 -->
+    <item android:drawable="@drawable/home_btn_bg_s" android:state_enabled="true" android:state_focused="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/home_btn_bg_s" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/home_btn_bg_d" android:state_checked="true" android:state_enabled="true"/>
+
+</selector>

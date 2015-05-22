@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ScanAnything"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="@string/start"
+            android:textSize="12dip" />
+
+        <Button
+            android:id="@+id/GetGps"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/ScanAnything"
+            android:gravity="center"
+            android:text="@string/getGps"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sendmsg"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/send" />
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mTextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dectext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/description"
+            android:textSize="20sp" >
+        </TextView>
+
+        <!--
+        <com.google.android.maps.MapView
+            android:id="@+id/MapView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dectext"
+            android:layout_centerHorizontal="true"
+            android:apiKey="0ufa3DY1X4atCTQ-0oL5SRrTcDIPCf9dZtixF7Q"     
+        />
+        -->
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+            <!-- android:layout_below="@+id/dectext"
+            android:layout_centerHorizontal="true" -->
+            
+
+        <!--
+             <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dectext"
+            android:layout_centerHorizontal="true" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyZxingTestActivity!</string>
+    <string name="tick_msg">请输入您的反馈意见</string>
+    <string name="app_name">食品追溯</string>
+    <string name="start">扫描条码</string>
+    <string name="send">发送食品与位置信息</string>
+    <string name="getGps">获取位置</string>
+    <string name="result_failed">No barcode found</string>
+    <string name="result_failed_why">"The user gave up and pressed Back"</string>
+    <string name="result_succeeded">Found barcode</string>
+    <string name="seccuss">发送成功</string>
+    <string name="error">发送失败</string>
+    <string name="startimage">欢迎使用物品管控系统</string>
+    <string name="imagetest">物品管家</string>
+    <string name="control">食品追溯</string>
+    <string name="tick">反馈</string>
+    <string name="help">帮助</string>
+    <string name="update">更新</string>
+    <string name="setting">设置</string>
+    <string name="home">首页</string>
+    <string name="comment">评论</string>
+    <string name="description">您的位置记录</string>
+    <string name="sleep">睡眠</string>
+    <string name="exit">退出</string>
+    <string name="zoomout">缩小</string>
+    <string name="zoomin">放大</string>
+    <string name="nodata">没有数据</string>
+    <string name="update_button">更新哦</string>
+    <string name="update_title">更新</string>
+    <string name="help_title">帮助</string>
+    <string name="quesion_title">问题反馈</string>
+    <string name="comment_title">评论</string>
+    <string name="home_title">首页</string>
+    <string name="set_title">设置</string>
+    <string name="scanbracode_title">条码识别</string>
+    <string name="title">FoodTrace</string>
+    <string name="version">版本：0.0.1.0907</string>
+    <string name="OK">确定</string>
+    <string name="submit">提交</string>
+    <string name="notification">位置</string>
+    <string name="help_message">在手机端Android系统下实现一维、二维条码的扫描和识读。面向基于物联网的农产品全生命周期管控应用，研究基于条码和手机客户端的应用系统，包括二维码编码和加密解密、部分生产管控功能、基于二维码和移动GIS的物流跟踪客户端、基于二维条码的商品防伪。</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxing.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    -->
+
+	<uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- android:theme="@style/notitle" -->
+    <application
+        android:icon="@drawable/title2"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.zxing.home.Image"
+            android:label="@string/app_name"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zxing.home.Tab"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+        <activity
+            android:name="com.zxing.home.Home"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zxing.home.SetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zxing.home.commentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zxing.foodtrace.foodtrace"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+
+        <!-- <uses-library android:name="com.google.android.maps" /> -->
+
+        <activity
+            android:name="com.zxing.home.MyListAdapter"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+        <activity
+            android:name="com.zxing.foodtrace.help"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+        <activity
+            android:name="com.zxing.foodtrace.update"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+
+            <!-- android:theme="@style/titlebarstyle" -->
+        </activity>
+        <activity
+            android:name="com.zxing.foodtrace.Tick"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+        <activity
+            android:name="com.winnower.tickActivity"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+        <activity
+            android:name="com.testCamera"
+            android:label="@string/app_name"
+            android:theme="@style/titlebarstyle" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <service android:name="com.zxing.gps.GetGpsService" >
+        </service>
+        <service android:name="com.zxing.gps.GPSTracker" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

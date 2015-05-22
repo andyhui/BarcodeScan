@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- android:background="#ff00ff" -->
+
+    <ImageView
+        android:id="@+id/Icon_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="3dip"
+        android:adjustViewBounds="true"
+        android:padding="0dip"
+        android:src="@drawable/green_airpan" >
+    </ImageView>
+   <!--  <TextView
+        android:text="@string/title"
+        android:textColor="#ffffff"
+        android:textSize="18dip"
+        android:layout_marginTop="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Icon_picture"
+        /> -->
+    
+    <TextView
+        android:id="@+id/title_text"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    <!-- android:src="@drawable/home_btn_gray" > -->
+
+        <!-- android:text="登录" -->
+    <Button
+        android:id="@+id/Icon_bar"
+        android:background="@drawable/people"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dip"
+        android:adjustViewBounds="true"
+        android:padding="0dip"
+        android:onClick="press"
+        android:src="@drawable/home_btn_bg_d" />
+
+</RelativeLayout>

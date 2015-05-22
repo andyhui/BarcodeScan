@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/rgTab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/maintab_toolbar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- android:background="@drawable/back_red" -->
+
+            <RadioButton
+                android:id="@+id/home"
+                style="@style/main_tab_rb"
+                android:drawableTop="@drawable/icon_1_n"
+                android:text="@string/home" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/comment"
+                style="@style/main_tab_rb"
+                android:drawableTop="@drawable/icon_2_n"
+                android:text="@string/comment" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/setting"
+                style="@style/main_tab_rb"
+                android:drawableTop="@drawable/icon_3_n"
+                android:text="@string/setting">
+            </RadioButton>
+            
+            <!-- <RadioButton
+                android:id="@+id/setting"
+                style="@style/main_tab_rb"
+                android:drawableTop="@drawable/icon_2_n"
+                android:text="@string/comment" >
+            </RadioButton> -->
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

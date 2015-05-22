@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- <style name="editStyle"></style>
+    <item name="android:"> -->
+
+    <style name="notitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomWindowTitleBg">
+        <item name="android:background">#00cc33</item>
+    </style>
+
+    <style name="titlebarstyle" parent="android:Theme">
+        <item name="android:windowTitleSize">38dip</item>
+        <item name="android:windowTitleBackgroundStyle"> @style/CustomWindowTitleBg </item>
+    </style>
+
+    <style name="CustomWindowTitleBg_update">
+        <item name="android:background">#ff0033</item>
+    </style>
+
+    <style name="update_title_style" parent="android:Theme">
+        <item name="android:windowTitleSize">100dip</item>
+        <item name="android:windowTitleBackgroundStyle"> @style/CustomWindowTitleBg_update</item>
+    </style>
+
+</resources>

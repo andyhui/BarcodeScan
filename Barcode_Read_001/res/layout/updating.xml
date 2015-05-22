@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/update_layout"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/sunflower"/>
+    <Button
+            android:id="@+id/updating"
+            android:layout_marginTop="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/update_button"
+            android:textSize="12dip" />
+    <TextView
+        android:text="@string/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:textSize="19dip"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        />
+    <TextView
+        android:text="@string/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dip"
+        android:textColor="@color/dark"
+        android:gravity="center"
+        />
+    <Button
+            android:id="@+id/ok"
+            android:layout_marginTop="20dip"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:text="@string/OK"
+            android:textSize="16dip" 
+            android:background="@color/green"/>
+ 
+
+</LinearLayout>
