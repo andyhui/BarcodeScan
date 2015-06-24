@@ -1,7 +1,10 @@
 package com.http.service;
 
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -20,8 +23,10 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 public class NewService {
-
-
+	private final static String SERVERURL = "192.168.111.50";
+	private final static int PORT = 2224;
+	static Socket s = null;
+	static DataOutputStream dout = null;
 
 	public static boolean save(String gps, String content) {
 		// TODO Auto-generated method stub
@@ -31,7 +36,36 @@ public class NewService {
 		params.put("gps",gps);
 		params.put("content",content);
 		//return sendGETRequest(path);
-		return sendPOSTRequest(path,params,"gb2312");
+		//return sendPOSTRequest(path,params,"gb2312");
+		return sendToServer(path,params,"gb2312");
+	}
+	
+	private static boolean sendToServer(String path,
+			Map<String, String> params,String encoding) {
+		try {
+			s = new Socket(SERVERURL,PORT);
+			dout = new DataOutputStream(s.getOutputStream());
+			if(params != null && !params.isEmpty())
+			{
+				for(Map.Entry<String, String> entry:params.entrySet()){
+					String outStream = null;
+					outStream += entry.getKey();
+					outStream += entry.getValue();
+					dout.writeBytes(outStream);
+					System.out.println(outStream);
+				}
+				return true;
+			}
+			
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+		
 	}
 
 	private static boolean sendPOSTRequest(String path,
